@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam — Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-head">
+        <div class="header-container">
+            <a href="index.html" class="logo-text">
+                <img src="images/steam_logo.svg" alt="Steam Logo" class="site-logo-icon">
+                <span>Steam</span>
+            </a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Main</a>
+                <a href="store.html" class="nav-link">Store</a>
+                <a href="libary.html" class="nav-link">Library</a>
+                <a href="setting.html" class="nav-link active" aria-current="page">Settings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="content-settings" class="tab-section">
+            <div class="settings-page-header">
+                <h1>⚙️ Steam & Game Settings</h1>
+                <p class="subtitle">Manage audio volume, key bindings, FPS limit, and account parameters.</p>
+            </div>
+
+            <form class="settings-cards-container" action="#" method="post">
+
+                
+                <section class="settings-box">
+                    <div class="settings-box-header">
+                        <span class="box-icon" aria-hidden="true">👤</span>
+                        <h2>Account & Security</h2>
+                    </div>
+                    <div class="settings-box-body">
+                        <div class="form-group">
+                            <label for="acc-login">Login (Steam Username):</label>
+                            <input type="text" id="acc-login" name="login" class="steam-input" value="Artyom_2033" placeholder="Enter login" autocomplete="username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acc-email">Email Address:</label>
+                            <input type="email" id="acc-email" name="email" class="steam-input" value="artyom.metro@sparta.ua" placeholder="name@email.com" autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acc-pass-current">Current Password:</label>
+                            <input type="password" id="acc-pass-current" name="current_password" class="steam-input" value="SecretPassword2033" placeholder="Enter current password" autocomplete="current-password">
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="acc-pass-new">New Password:</label>
+                                <input type="password" id="acc-pass-new" name="new_password" class="steam-input" placeholder="New password" autocomplete="new-password">
+                            </div>
+                            <div class="form-group">
+                                <label for="acc-pass-confirm">Confirm Password:</label>
+                                <input type="password" id="acc-pass-confirm" name="confirm_password" class="steam-input" placeholder="Repeat new password" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="toggle-row">
+                            <div class="toggle-text">
+                                <strong>Steam Guard (2FA Protection)</strong>
+                                <span>Two-factor authentication via mobile app</span>
+                            </div>
+                            <label class="css-switch" for="toggle-steam-guard">
+                                <input type="checkbox" id="toggle-steam-guard" name="steam_guard" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                        <div class="box-actions">
+                            <button type="submit" class="btn-primary-settings">Save Account Data</button>
+                            <button type="button" class="btn-secondary-settings">Log Out</button>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="settings-box">
+                    <div class="settings-box-header">
+                        <span class="box-icon" aria-hidden="true">🔊</span>
+                        <h2>Volume & Sound Effects</h2>
+                    </div>
+                    <div class="settings-box-body">
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="vol-master">Master Volume:</label>
+                                <span class="slider-val">85%</span>
+                            </div>
+                            <input type="range" id="vol-master" name="vol_master" min="0" max="100" value="85" class="steam-range">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="vol-music">In-game Music:</label>
+                                <span class="slider-val">70%</span>
+                            </div>
+                            <input type="range" id="vol-music" name="vol_music" min="0" max="100" value="70" class="steam-range">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="vol-sfx">Sound Effects (Shots, monsters, footsteps):</label>
+                                <span class="slider-val">95%</span>
+                            </div>
+                            <input type="range" id="vol-sfx" name="vol_sfx" min="0" max="100" value="95" class="steam-range">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="vol-voice">Dialogue Voice (Artyom and character voices):</label>
+                                <span class="slider-val">100%</span>
+                            </div>
+                            <input type="range" id="vol-voice" name="vol_voice" min="0" max="100" value="100" class="steam-range">
+                        </div>
+
+                        <div class="toggle-row">
+                            <div class="toggle-text">
+                                <strong>Mute audio when minimized</strong>
+                                <span>Reduce game volume when the window is inactive</span>
+                            </div>
+                            <label class="css-switch" for="toggle-mute-audio">
+                                <input type="checkbox" id="toggle-mute-audio" name="mute_audio" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="settings-box">
+                    <div class="settings-box-header">
+                        <span class="box-icon" aria-hidden="true">🎮</span>
+                        <h2>Controls & Key Bindings</h2>
+                    </div>
+                    <div class="settings-box-body">
+                        <div class="slider-group">
+                            <div class="slider-label-row">
+                                <label for="mouse-sens">Mouse Sensitivity:</label>
+                                <span class="slider-val">5.5</span>
+                            </div>
+                            <input type="range" id="mouse-sens" name="mouse_sens" min="1" max="10" step="0.5" value="5.5" class="steam-range">
+                        </div>
+                        <div class="toggle-row">
+                            <div class="toggle-text">
+                                <strong>Invert Y-Axis</strong>
+                                <span>Invert vertical look movement</span>
+                            </div>
+                            <label class="css-switch" for="toggle-invert-y">
+                                <input type="checkbox" id="toggle-invert-y" name="invert_y">
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+
+                        <h3 class="sub-heading">Control Keys (Metro 2033 Layout):</h3>
+                        <div class="controls-grid">
+                            <div class="control-item">
+                                <span class="action-name">Move Forward</span>
+                                <kbd class="key-badge">W</kbd>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Move Backward</span>
+                                <kbd class="key-badge">S</kbd>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Move Left / Right</span>
+                                <div class="keys-double"><kbd class="key-badge">A</kbd> <kbd class="key-badge">D</kbd></div>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Jump</span>
+                                <kbd class="key-badge wide">Space</kbd>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Crouch</span>
+                                <kbd class="key-badge">Ctrl</kbd>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Fire / Primary Attack</span>
+                                <kbd class="key-badge mouse-key">LMB</kbd>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Aim</span>
+                                <kbd class="key-badge mouse-key">RMB</kbd>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Toggle Flashlight</span>
+                                <kbd class="key-badge">F</kbd>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Equip Gas Mask / Change Filter</span>
+                                <div class="keys-double"><kbd class="key-badge">G</kbd> <kbd class="key-badge">T</kbd></div>
+                            </div>
+                            <div class="control-item">
+                                <span class="action-name">Charge Universal Battery</span>
+                                <kbd class="key-badge">V</kbd>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="settings-box">
+                    <div class="settings-box-header">
+                        <span class="box-icon" aria-hidden="true">🖥</span>
+                        <h2>Graphics & FPS Limit</h2>
+                    </div>
+                    <div class="settings-box-body">
+                        <div class="form-group">
+                            <label for="fps-limit-select">Frames Per Second Limit (FPS Limit):</label>
+                            <select id="fps-limit-select" name="fps_limit" class="steam-select">
+                                <option value="30">30 FPS (Power Saving)</option>
+                                <option value="60">60 FPS (Standard)</option>
+                                <option value="120">120 FPS (High Smoothness)</option>
+                                <option value="144" selected>144 FPS (Gaming Monitors)</option>
+                                <option value="240">240 FPS (Esports)</option>
+                                <option value="unlimited">Unlimited (Max Performance)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="graphics-quality">Graphics Quality:</label>
+                            <select id="graphics-quality" name="graphics_quality" class="steam-select">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                                <option value="ultra" selected>Ultra (Maximum Detail)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resolution-select">Screen Resolution:</label>
+                            <select id="resolution-select" name="resolution" class="steam-select">
+                                <option value="1920x1080" selected>1920 × 1080 (Full HD)</option>
+                                <option value="2560x1440">2560 × 1440 (2K QHD)</option>
+                                <option value="3840x2160">3840 × 2160 (4K Ultra HD)</option>
+                            </select>
+                        </div>
+
+                        <div class="toggle-row">
+                            <div class="toggle-text">
+                                <strong>In-game FPS Counter</strong>
+                                <span>Display current frame rate in the top left corner</span>
+                            </div>
+                            <label class="css-switch" for="toggle-fps-counter">
+                                <input type="checkbox" id="toggle-fps-counter" name="fps_counter" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="toggle-row">
+                            <div class="toggle-text">
+                                <strong>Vertical Synchronization (V-Sync)</strong>
+                                <span>Eliminate screen tearing</span>
+                            </div>
+                            <label class="css-switch" for="toggle-vsync">
+                                <input type="checkbox" id="toggle-vsync" name="vsync" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="index.html" class="footer-logo-block">
+                <div class="footer-icon-wrap">
+                    <img src="images/steam_logo.svg" alt="Steam" class="footer-logo-icon">
+                </div>
+                <span class="footer-title">steam</span>
+            </a>
+            <div class="footer-support-block">
+                <a href="Support.html" class="support-btn">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam — S.T.A.L.K.E.R.: Shadow of Chernobyl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-head">
+        <div class="header-container">
+            <a href="index.html" class="logo-text">
+                <img src="images/steam_logo.svg" alt="Steam Logo" class="site-logo-icon">
+                <span>Steam</span>
+            </a>
+            <nav class="main-nav" aria-label="Main Menu">
+                <a href="index.html" class="nav-link">Main</a>
+                <a href="store.html" class="nav-link">Store</a>
+                <a href="libary.html" class="nav-link">Library</a>
+                <a href="setting.html" class="nav-link">Settings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="game-full-view">
+            <h1 class="game-full-title">S.T.A.L.K.E.R.: Shadow of Chernobyl</h1>
+
+            <div class="game-full-layout">
+                <div class="game-full-description">
+                    <p>S.T.A.L.K.E.R.: Shadow of Chernobyl is a science fiction video game from Ukraine. The story takes place in the Chernobyl Exclusion Zone after a mysterious disaster.</p>
+                    <p>The main character is called the Marked One. He explores the Zone, finds dangerous places and meets other stalkers. He searches for answers about his past.</p>
+                    <p>I like this game because it has an exciting atmosphere, exploration and mystery.</p>
+                    <div class="game-full-actions">
+                        <a href="index.html" class="back-btn">← Back to Main</a>
+                        <a href="#modal-stalker" class="btn-confirm-purchase" style="padding: 10px 22px; font-size: 14px; text-decoration: none;">🛒 Buy S.T.A.L.K.E.R. — $19.99</a>
+                    </div>
+                </div>
+
+                <div class="game-full-media">
+                    <img src="images/stalker_soc.jpg" alt="S.T.A.L.K.E.R.: Shadow of Chernobyl" class="game-cover-large">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="index.html" class="footer-logo-block">
+                <img src="images/steam_logo.svg" alt="Steam Logo" class="footer-logo-icon">
+                <span class="footer-title">steam</span>
+            </a>
+
+            <div class="footer-support-block">
+                <a href="Support.html" class="support-btn">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pure CSS Purchase Modal for S.T.A.L.K.E.R. -->
+    <div id="modal-stalker" class="steam-modal-overlay">
+        <a href="#!" class="modal-backdrop-link" aria-label="Close modal"></a>
+        <div class="steam-modal-dialog">
+            <div class="steam-modal-header">
+                <h3>🛒 Steam Checkout</h3>
+                <a href="#!" class="modal-close-btn" aria-label="Close">✕</a>
+            </div>
+            <div class="steam-modal-body">
+                <div class="checkout-game-preview">
+                    <img src="images/stalker_soc.jpg" alt="S.T.A.L.K.E.R." class="checkout-game-thumb">
+                    <div class="checkout-game-details">
+                        <h4 class="checkout-game-title">S.T.A.L.K.E.R.: Shadow of Chernobyl</h4>
+                        <div class="checkout-game-prices">
+                            <span class="checkout-orig-price">$19.99</span>
+                            <span class="discount-badge">-75%</span>
+                            <span class="checkout-final-price">$4.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-method-section">
+                    <div class="modal-section-title">Select Payment Method</div>
+                    <div class="payment-options-group">
+                        <label class="payment-radio-label">
+                            <input type="radio" name="pay_method_stalker" value="wallet" checked>
+                            <span>💳 Steam Wallet ($45.50 available)</span>
+                        </label>
+                        <label class="payment-radio-label">
+                            <input type="radio" name="pay_method_stalker" value="card">
+                            <span>💳 Visa / Mastercard (**4242)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkout-summary-box">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>$19.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount:</span>
+                        <span>-$15.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total Due:</span>
+                        <span class="total-amount">$4.99</span>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="libary.html" class="btn-confirm-purchase">✓ Complete Purchase</a>
+                    <a href="#!" class="btn-cancel-modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

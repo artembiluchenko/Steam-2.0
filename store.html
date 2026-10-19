@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam — Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-head">
+        <div class="header-container">
+            <a href="index.html" class="logo-text">
+                <img src="images/steam_logo.svg" alt="Steam Logo" class="site-logo-icon">
+                <span>Steam</span>
+            </a>
+            <nav class="main-nav" aria-label="Main Menu">
+                <a href="index.html" class="nav-link">Main</a>
+                <a href="store.html" class="nav-link active" aria-current="page">Store</a>
+                <a href="libary.html" class="nav-link">Library</a>
+                <a href="setting.html" class="nav-link">Settings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="content-store" class="tab-section">
+            <div class="store-header">
+                <div class="store-title-group">
+                    <h1>🎮 Steam Games Catalog & Storefront</h1>
+                    <p class="subtitle">Discover top games for your collection and add them to your library!</p>
+                </div>
+            </div>
+
+            
+            <div class="cards-grid full-grid">
+                
+                
+                <article class="game-card">
+                    <div class="card-thumb-wrap">
+                        <img src="images/metro_cover.jpg" alt="Metro 2033" class="card-thumb-img">
+                        <span class="card-badge">⭐️ 9.2/10</span>
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">Metro 2033</h2>
+                        <div class="card-genres">Post-apocalyptic, FPS, Survival</div>
+                        <p class="card-desc">The story of Artyom in the underground metro of a radiation-ravaged Moscow.</p>
+                        <div class="card-bottom-bar">
+                            <div class="card-price-group">
+                                <span class="card-discount">-75%</span>
+                                <span class="card-current-price">$4.99</span>
+                            </div>
+                            <div class="card-buy-slot">
+                                <a href="metro2033.html" class="card-buy-btn">Details</a>
+                                <a href="libary.html" class="card-buy-btn card-btn-owned">✓ In Library</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="game-card">
+                    <div class="card-thumb-wrap">
+                        <img src="images/geometry_dash_cover.png" alt="Geometry Dash" class="card-thumb-img">
+                        <span class="card-badge">⭐️ 9.3/10</span>
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">Geometry Dash</h2>
+                        <div class="card-genres">Rhythm, Platformer, Indie</div>
+                        <p class="card-desc">Rhythm-based platformer jumping over obstacles to energetic electronic beats.</p>
+                        <div class="card-bottom-bar">
+                            <div class="card-price-group">
+                                <span class="card-discount">-50%</span>
+                                <span class="card-current-price">$1.99</span>
+                            </div>
+                            <div class="card-buy-slot">
+                                <a href="geometry_dash.html" class="card-buy-btn">Details</a>
+                                <a href="#modal-store-gd" class="card-buy-btn card-btn-buy">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <div class="card-thumb-wrap">
+                        <img src="images/stalker2.jpg" alt="S.T.A.L.K.E.R. 2" class="card-thumb-img">
+                        <span class="card-badge">⭐️ 9.5/10</span>
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">S.T.A.L.K.E.R. 2</h2>
+                        <div class="card-genres">FPS, Survival, Open World</div>
+                        <p class="card-desc">Journey through the Chornobyl Exclusion Zone with dangerous mutants, anomalies, and complete freedom.</p>
+                        <div class="card-bottom-bar">
+                            <div class="card-price-group">
+                                <span class="card-discount">-25%</span>
+                                <span class="card-current-price">$44.99</span>
+                            </div>
+                            <div class="card-buy-slot card-buy-slot-stalker">
+                                <a href="stalker.html" class="card-buy-btn">Details</a>
+                                <a href="libary.html" class="card-buy-btn card-stalker-owned">✓ In Library</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="game-card">
+                    <div class="card-thumb-wrap">
+                        <img src="images/metro_last_light.jpg" alt="Metro: Last Light" class="card-thumb-img">
+                        <span class="card-badge">⭐️ 9.0/10</span>
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">Metro: Last Light Redux</h2>
+                        <div class="card-genres">Action, FPS, Story</div>
+                        <p class="card-desc">The sequel to the iconic saga: humanity's desperate struggle for survival beneath the ruins.</p>
+                        <div class="card-bottom-bar">
+                            <div class="card-price-group">
+                                <span class="card-discount">-70%</span>
+                                <span class="card-current-price">$4.99</span>
+                            </div>
+                            <div class="card-buy-slot">
+                                <a href="metro2033.html" class="card-buy-btn">Details</a>
+                                <a href="#modal-store-lastlight" class="card-buy-btn card-btn-buy">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="game-card">
+                    <div class="card-thumb-wrap">
+                        <img src="images/metro_exodus.jpg" alt="Metro Exodus" class="card-thumb-img">
+                        <span class="card-badge">⭐️ 9.4/10</span>
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">Metro Exodus</h2>
+                        <div class="card-genres">Action, Survival, Open World</div>
+                        <p class="card-desc">An epic journey aboard the locomotive Aurora in search of a new life across post-apocalyptic Russia.</p>
+                        <div class="card-bottom-bar">
+                            <div class="card-price-group">
+                                <span class="card-discount">-67%</span>
+                                <span class="card-current-price">$9.99</span>
+                            </div>
+                            <div class="card-buy-slot">
+                                <a href="metro2033.html" class="card-buy-btn">Details</a>
+                                <a href="#modal-store-exodus" class="card-buy-btn card-btn-buy">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <div class="card-thumb-wrap">
+                        <img src="images/cyberpunk.jpg" alt="Cyberpunk 2077" class="card-thumb-img">
+                        <span class="card-badge">⭐️ 9.1/10</span>
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">Cyberpunk 2077</h2>
+                        <div class="card-genres">RPG, Sci-Fi, Open World</div>
+                        <p class="card-desc">Open-world action-adventure RPG set in the neon-lit megalopolis of Night City.</p>
+                        <div class="card-bottom-bar">
+                            <div class="card-price-group">
+                                <span class="card-discount">-50%</span>
+                                <span class="card-current-price">$29.99</span>
+                            </div>
+                            <div class="card-buy-slot">
+                                <a href="index.html" class="card-buy-btn">Details</a>
+                                <a href="#modal-store-cyberpunk" class="card-buy-btn card-btn-buy">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+               
+                <article class="game-card">
+                    <div class="card-thumb-wrap">
+                        <img src="images/witcher3.jpg" alt="The Witcher 3" class="card-thumb-img">
+                        <span class="card-badge">⭐️ 9.8/10</span>
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-title">The Witcher 3: Wild Hunt</h2>
+                        <div class="card-genres">RPG, Fantasy, Story Rich</div>
+                        <p class="card-desc">Geralt of Rivia searches for Ciri across a vast, war-torn fantasy world filled with monsters.</p>
+                        <div class="card-bottom-bar">
+                            <div class="card-price-group">
+                                <span class="card-discount">-71%</span>
+                                <span class="card-current-price">$9.99</span>
+                            </div>
+                            <div class="card-buy-slot">
+                                <a href="warcraft3.html" class="card-buy-btn">Details</a>
+                                <a href="#modal-store-witcher" class="card-buy-btn card-btn-buy">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- PURE CSS MODAL 1: Geometry Dash -->
+    <div id="modal-store-gd" class="steam-modal-overlay">
+        <a href="#!" class="modal-backdrop-link" aria-label="Close dialog"></a>
+        <div class="steam-modal-dialog">
+            <div class="steam-modal-header">
+                <h3>🛍️ Steam Purchase & Checkout</h3>
+                <a href="#!" class="modal-close-btn" aria-label="Close dialog">✕</a>
+            </div>
+            <div class="steam-modal-body">
+                <div class="checkout-game-preview">
+                    <img src="images/geometry_dash_cover.png" alt="Geometry Dash" class="checkout-game-thumb">
+                    <div class="checkout-game-details">
+                        <h4 class="checkout-game-title">Geometry Dash</h4>
+                        <div class="checkout-game-prices">
+                            <span class="card-discount">-50%</span>
+                            <span class="checkout-orig-price">$3.99</span>
+                            <span class="checkout-final-price">$1.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Purchase Option:</h5>
+                    <div class="payment-options-group">
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_gd" value="self" checked>
+                            <span>Purchase for my account (<strong>Artyom_2033</strong>)</span>
+                        </label>
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_gd" value="gift">
+                            <span>Purchase as a gift to a Steam Friend</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Payment Method:</h5>
+                    <select class="steam-select">
+                        <option value="wallet">My Steam Wallet ($45.50 available)</option>
+                        <option value="visa">Visa / Mastercard (ending in •• 4281)</option>
+                        <option value="paypal">PayPal (artyom.metro@sparta.com)</option>
+                    </select>
+                </div>
+
+                <div class="checkout-summary-box">
+                    <div class="summary-row">
+                        <span>Account</span>
+                        <span>Artyom_2033</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$1.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total Due</span>
+                        <span class="total-amount">$1.99</span>
+                    </div>
+                </div>
+
+                <label class="checkout-checkbox-label">
+                    <input type="checkbox" checked required>
+                    <span>I agree to the terms of the Steam Subscriber Agreement and authorize Steam to charge my payment method.</span>
+                </label>
+
+                <div class="modal-actions">
+                    <a href="libary.html" class="btn-confirm-purchase">
+                        💳 Complete Purchase ($1.99)
+                    </a>
+                    <a href="#!" class="btn-cancel-modal">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PURE CSS MODAL 2: Metro: Last Light Redux -->
+    <div id="modal-store-lastlight" class="steam-modal-overlay">
+        <a href="#!" class="modal-backdrop-link" aria-label="Close dialog"></a>
+        <div class="steam-modal-dialog">
+            <div class="steam-modal-header">
+                <h3>🛍️ Steam Purchase & Checkout</h3>
+                <a href="#!" class="modal-close-btn" aria-label="Close dialog">✕</a>
+            </div>
+            <div class="steam-modal-body">
+                <div class="checkout-game-preview">
+                    <img src="images/metro_last_light.jpg" alt="Metro: Last Light" class="checkout-game-thumb">
+                    <div class="checkout-game-details">
+                        <h4 class="checkout-game-title">Metro: Last Light Redux</h4>
+                        <div class="checkout-game-prices">
+                            <span class="card-discount">-70%</span>
+                            <span class="checkout-orig-price">$16.99</span>
+                            <span class="checkout-final-price">$4.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Purchase Option:</h5>
+                    <div class="payment-options-group">
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_ll" value="self" checked>
+                            <span>Purchase for my account (<strong>Artyom_2033</strong>)</span>
+                        </label>
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_ll" value="gift">
+                            <span>Purchase as a gift to a Steam Friend</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Payment Method:</h5>
+                    <select class="steam-select">
+                        <option value="wallet">My Steam Wallet ($45.50 available)</option>
+                        <option value="visa">Visa / Mastercard (ending in •• 4281)</option>
+                        <option value="paypal">PayPal (artyom.metro@sparta.com)</option>
+                    </select>
+                </div>
+
+                <div class="checkout-summary-box">
+                    <div class="summary-row">
+                        <span>Account</span>
+                        <span>Artyom_2033</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$4.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total Due</span>
+                        <span class="total-amount">$4.99</span>
+                    </div>
+                </div>
+
+                <label class="checkout-checkbox-label">
+                    <input type="checkbox" checked required>
+                    <span>I agree to the terms of the Steam Subscriber Agreement and authorize Steam to charge my payment method.</span>
+                </label>
+
+                <div class="modal-actions">
+                    <a href="libary.html" class="btn-confirm-purchase">
+                        💳 Complete Purchase ($4.99)
+                    </a>
+                    <a href="#!" class="btn-cancel-modal">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PURE CSS MODAL 3: Metro Exodus -->
+    <div id="modal-store-exodus" class="steam-modal-overlay">
+        <a href="#!" class="modal-backdrop-link" aria-label="Close dialog"></a>
+        <div class="steam-modal-dialog">
+            <div class="steam-modal-header">
+                <h3>🛍️ Steam Purchase & Checkout</h3>
+                <a href="#!" class="modal-close-btn" aria-label="Close dialog">✕</a>
+            </div>
+            <div class="steam-modal-body">
+                <div class="checkout-game-preview">
+                    <img src="images/metro_exodus.jpg" alt="Metro Exodus" class="checkout-game-thumb">
+                    <div class="checkout-game-details">
+                        <h4 class="checkout-game-title">Metro Exodus</h4>
+                        <div class="checkout-game-prices">
+                            <span class="card-discount">-67%</span>
+                            <span class="checkout-orig-price">$29.99</span>
+                            <span class="checkout-final-price">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Purchase Option:</h5>
+                    <div class="payment-options-group">
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_ex" value="self" checked>
+                            <span>Purchase for my account (<strong>Artyom_2033</strong>)</span>
+                        </label>
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_ex" value="gift">
+                            <span>Purchase as a gift to a Steam Friend</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Payment Method:</h5>
+                    <select class="steam-select">
+                        <option value="wallet">My Steam Wallet ($45.50 available)</option>
+                        <option value="visa">Visa / Mastercard (ending in •• 4281)</option>
+                        <option value="paypal">PayPal (artyom.metro@sparta.com)</option>
+                    </select>
+                </div>
+
+                <div class="checkout-summary-box">
+                    <div class="summary-row">
+                        <span>Account</span>
+                        <span>Artyom_2033</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$9.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total Due</span>
+                        <span class="total-amount">$9.99</span>
+                    </div>
+                </div>
+
+                <label class="checkout-checkbox-label">
+                    <input type="checkbox" checked required>
+                    <span>I agree to the terms of the Steam Subscriber Agreement and authorize Steam to charge my payment method.</span>
+                </label>
+
+                <div class="modal-actions">
+                    <a href="libary.html" class="btn-confirm-purchase">
+                        💳 Complete Purchase ($9.99)
+                    </a>
+                    <a href="#!" class="btn-cancel-modal">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PURE CSS MODAL 4: Cyberpunk 2077 -->
+    <div id="modal-store-cyberpunk" class="steam-modal-overlay">
+        <a href="#!" class="modal-backdrop-link" aria-label="Close dialog"></a>
+        <div class="steam-modal-dialog">
+            <div class="steam-modal-header">
+                <h3>🛍️ Steam Purchase & Checkout</h3>
+                <a href="#!" class="modal-close-btn" aria-label="Close dialog">✕</a>
+            </div>
+            <div class="steam-modal-body">
+                <div class="checkout-game-preview">
+                    <img src="images/cyberpunk.jpg" alt="Cyberpunk 2077" class="checkout-game-thumb">
+                    <div class="checkout-game-details">
+                        <h4 class="checkout-game-title">Cyberpunk 2077</h4>
+                        <div class="checkout-game-prices">
+                            <span class="card-discount">-50%</span>
+                            <span class="checkout-orig-price">$59.99</span>
+                            <span class="checkout-final-price">$29.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Purchase Option:</h5>
+                    <div class="payment-options-group">
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_cp" value="self" checked>
+                            <span>Purchase for my account (<strong>Artyom_2033</strong>)</span>
+                        </label>
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_cp" value="gift">
+                            <span>Purchase as a gift to a Steam Friend</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Payment Method:</h5>
+                    <select class="steam-select">
+                        <option value="wallet">My Steam Wallet ($45.50 available)</option>
+                        <option value="visa">Visa / Mastercard (ending in •• 4281)</option>
+                        <option value="paypal">PayPal (artyom.metro@sparta.com)</option>
+                    </select>
+                </div>
+
+                <div class="checkout-summary-box">
+                    <div class="summary-row">
+                        <span>Account</span>
+                        <span>Artyom_2033</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$29.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total Due</span>
+                        <span class="total-amount">$29.99</span>
+                    </div>
+                </div>
+
+                <label class="checkout-checkbox-label">
+                    <input type="checkbox" checked required>
+                    <span>I agree to the terms of the Steam Subscriber Agreement and authorize Steam to charge my payment method.</span>
+                </label>
+
+                <div class="modal-actions">
+                    <a href="libary.html" class="btn-confirm-purchase">
+                        💳 Complete Purchase ($29.99)
+                    </a>
+                    <a href="#!" class="btn-cancel-modal">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PURE CSS MODAL 5: The Witcher 3: Wild Hunt -->
+    <div id="modal-store-witcher" class="steam-modal-overlay">
+        <a href="#!" class="modal-backdrop-link" aria-label="Close dialog"></a>
+        <div class="steam-modal-dialog">
+            <div class="steam-modal-header">
+                <h3>🛍️ Steam Purchase & Checkout</h3>
+                <a href="#!" class="modal-close-btn" aria-label="Close dialog">✕</a>
+            </div>
+            <div class="steam-modal-body">
+                <div class="checkout-game-preview">
+                    <img src="images/witcher3.jpg" alt="The Witcher 3" class="checkout-game-thumb">
+                    <div class="checkout-game-details">
+                        <h4 class="checkout-game-title">The Witcher 3: Wild Hunt</h4>
+                        <div class="checkout-game-prices">
+                            <span class="card-discount">-71%</span>
+                            <span class="checkout-orig-price">$34.99</span>
+                            <span class="checkout-final-price">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Purchase Option:</h5>
+                    <div class="payment-options-group">
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_w3" value="self" checked>
+                            <span>Purchase for my account (<strong>Artyom_2033</strong>)</span>
+                        </label>
+                        <label class="payment-radio-label">
+                            <input type="radio" name="opt_w3" value="gift">
+                            <span>Purchase as a gift to a Steam Friend</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="modal-section-title">Payment Method:</h5>
+                    <select class="steam-select">
+                        <option value="wallet">My Steam Wallet ($45.50 available)</option>
+                        <option value="visa">Visa / Mastercard (ending in •• 4281)</option>
+                        <option value="paypal">PayPal (artyom.metro@sparta.com)</option>
+                    </select>
+                </div>
+
+                <div class="checkout-summary-box">
+                    <div class="summary-row">
+                        <span>Account</span>
+                        <span>Artyom_2033</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$9.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Estimated Tax</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Total Due</span>
+                        <span class="total-amount">$9.99</span>
+                    </div>
+                </div>
+
+                <label class="checkout-checkbox-label">
+                    <input type="checkbox" checked required>
+                    <span>I agree to the terms of the Steam Subscriber Agreement and authorize Steam to charge my payment method.</span>
+                </label>
+
+                <div class="modal-actions">
+                    <a href="libary.html" class="btn-confirm-purchase">
+                        💳 Complete Purchase ($9.99)
+                    </a>
+                    <a href="#!" class="btn-cancel-modal">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="index.html" class="footer-logo-block">
+                <img src="images/steam_logo.svg" alt="Steam Logo" class="footer-logo-icon">
+                <span class="footer-title">steam</span>
+            </a>
+
+            <div class="footer-support-block">
+                <a href="Support.html" class="support-btn">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

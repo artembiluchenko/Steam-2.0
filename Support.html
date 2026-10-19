@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam — Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-head">
+        <div class="header-container">
+            <a href="index.html" class="logo-text">
+                <img src="images/steam_logo.svg" alt="Steam Logo" class="site-logo-icon">
+                <span>Steam</span>
+            </a>
+            <nav class="main-nav" aria-label="Main Menu">
+                <a href="index.html" class="nav-link">Main</a>
+                <a href="store.html" class="nav-link">Store</a>
+                <a href="libary.html" class="nav-link">Library</a>
+                <a href="setting.html" class="nav-link">Settings</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="store-header">
+            <div class="store-title-group">
+                <h1>🎧 Steam Support Center</h1>
+                <p class="subtitle">What do you need help with today? Find answers or submit a ticket directly to our support agents.</p>
+            </div>
+        </div>
+
+        <div class="support-container">
+            <!-- Quick Support Categories -->
+            <div class="support-cat-grid">
+                <a href="#contact-support" class="support-cat-card">
+                    <span class="support-cat-icon">🎮</span>
+                    <h3 class="support-cat-title">Games & Applications</h3>
+                    <p class="support-cat-desc">Trouble launching, in-game errors, crashes, missing DLC or updates.</p>
+                </a>
+
+                <a href="#contact-support" class="support-cat-card">
+                    <span class="support-cat-icon">💳</span>
+                    <h3 class="support-cat-title">Purchases & Refunds</h3>
+                    <p class="support-cat-desc">Request a refund, payment errors, checkout issues, or gift questions.</p>
+                </a>
+
+                <a href="#contact-support" class="support-cat-card">
+                    <span class="support-cat-icon">🛡️</span>
+                    <h3 class="support-cat-title">Account & Steam Guard</h3>
+                    <p class="support-cat-desc">Forgot password, two-factor authentication, or hijacked accounts.</p>
+                </a>
+
+                <a href="#contact-support" class="support-cat-card">
+                    <span class="support-cat-icon">🖥️</span>
+                    <h3 class="support-cat-title">Hardware & Steam Client</h3>
+                    <p class="support-cat-desc">Steam overlay, controllers, Steam Deck, and connection issues.</p>
+                </a>
+            </div>
+
+            <!-- Contact Support Form -->
+            <section id="contact-support" class="settings-box">
+                <div class="settings-box-header">
+                    <span class="box-icon" aria-hidden="true">✉️</span>
+                    <h2>Contact Steam Support</h2>
+                </div>
+
+                <div class="settings-box-body">
+                    <form action="#ticket-submitted" method="get">
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="support-topic">Help Topic / Category:</label>
+                                <select id="support-topic" name="topic" class="steam-select" required>
+                                    <option value="" disabled selected>Select an issue category...</option>
+                                    <option value="Games & Software">Game Won't Launch or Crashes</option>
+                                    <option value="Purchases & Billing">Purchase, Payment or Refund Request</option>
+                                    <option value="Account & Security">Account Security & Steam Guard</option>
+                                    <option value="Hardware & Client">Steam Client or Hardware Issue</option>
+                                    <option value="Other">Other Inquiries</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="support-game">Related Game / Product:</label>
+                                <select id="support-game" name="game" class="steam-select">
+                                    <option value="General Steam Client">Steam Client (General)</option>
+                                    <option value="Metro 2033">Metro 2033</option>
+                                    <option value="Metro: Last Light Redux">Metro: Last Light Redux</option>
+                                    <option value="Metro Exodus">Metro Exodus</option>
+                                    <option value="Cyberpunk 2077">Cyberpunk 2077</option>
+                                    <option value="The Witcher 3: Wild Hunt">The Witcher 3: Wild Hunt</option>
+                                    <option value="S.T.A.L.K.E.R. 2: Heart of Chornobyl">S.T.A.L.K.E.R. 2</option>
+                                    <option value="Geometry Dash">Geometry Dash</option>
+                                    <option value="Counter-Strike 2">Counter-Strike 2</option>
+                                    <option value="Warcraft III">Warcraft III</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support-email">Your Email Address for Contact:</label>
+                            <input type="email" id="support-email" name="email" class="steam-input" value="artyom.metro@sparta.com" placeholder="you@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support-subject">Subject / Brief Summary:</label>
+                            <input type="text" id="support-subject" name="subject" class="steam-input" placeholder="e.g. Game crashes on startup with DirectX error" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support-message">Detailed Description of the Issue:</label>
+                            <textarea id="support-message" name="message" class="support-textarea" placeholder="Please describe what happened, any error messages displayed, and steps you already tried..." required></textarea>
+                        </div>
+
+                        <div class="box-actions">
+                            <button type="submit" class="support-submit-btn">
+                                <span>📩 Send Support Request</span>
+                            </button>
+                            <a href="store.html" class="btn-secondary-settings" style="text-decoration:none; display:inline-flex; align-items:center;">Back to Store</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pure CSS Support Ticket Success Modal (:target) -->
+    <div id="ticket-submitted" class="steam-modal-overlay">
+        <a href="#!" class="modal-backdrop-link" aria-label="Close dialog"></a>
+        <div class="steam-modal-dialog">
+            <div class="steam-modal-header">
+                <h3>✅ Support Request Sent</h3>
+                <a href="#!" class="modal-close-btn" aria-label="Close dialog">✕</a>
+            </div>
+            <div class="steam-modal-body modal-success-state" style="display:flex;">
+                <div class="modal-success-icon">🎉</div>
+                <h4>Support Request Received!</h4>
+                <p>Thank you! Your ticket has been registered in the Steam Support system.</p>
+                <div class="modal-success-receipt">Ticket ID: #STM-74910</div>
+                <p>A confirmation email has been dispatched to <strong>artyom.metro@sparta.com</strong>. A Steam Support representative will review your case and respond within 24 hours.</p>
+                <div class="modal-actions" style="width:100%; justify-content:center; margin-top:10px;">
+                    <a href="#!" class="btn-primary-settings" style="text-decoration:none; padding:10px 24px;">Done</a>
+                    <a href="store.html" class="btn-secondary-settings" style="text-decoration:none; display:inline-flex; align-items:center;">Back to Store</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="index.html" class="footer-logo-block">
+                <img src="images/steam_logo.svg" alt="Steam Logo" class="footer-logo-icon">
+                <span class="footer-title">steam</span>
+            </a>
+
+            <div class="footer-support-block">
+                <a href="Support.html" class="support-btn" style="border-color:var(--accent-blue); background:rgba(102,192,244,0.15); color:#fff;">Support (Active)</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
